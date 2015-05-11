@@ -4,7 +4,7 @@ FROM sparklyballs/isengard-builder
 ADD src/ /root/
 
 # Set build file volume
-VOLUME /Build-Scripts
+VOLUME /Build-Scripts /Patches
 
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
