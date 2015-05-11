@@ -1,5 +1,13 @@
 #!/bin/bash
 
+########### clean any previously built debs ##########
+
+rm /root/project/debout/*.deb
+rm /deb-out/*.deb
+
+###################################################
+
+
 ########### pre/post installation requirements #############
 
 echo "#!/bin/bash" >/root/project/debout/libtooldo.sh && \
@@ -7,6 +15,7 @@ echo "libtool --finish /usr/local/lib/xrdp" >> /root/project/debout/libtooldo.sh
 chmod +x /root/project/debout/libtooldo.sh
 
 ###############################################
+
 
 
 ######################### make fpm and set dependencies for runtime ###############
