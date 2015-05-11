@@ -1,5 +1,15 @@
 #!/bin/bash
 
+cd /Patches
+patchfiles=(*.sh)
+if [ -e "${patchfiles[0]}" ];
+then
+echo "patch file(s) found"
+else
+cp /root/patches/*.patch /Patches/
+fi
+
+
 cd /Build-Scripts
 files=(*.sh)
 
