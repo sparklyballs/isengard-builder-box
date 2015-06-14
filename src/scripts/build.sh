@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /root/build-area/xbmc
-git checkout 15.0b1-Isengard
+git checkout 15.0b2-Isengard
 
 cp /Patches/* .
 git apply headless.patch
